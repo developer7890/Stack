@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Stack.js"></script>
+  </head>
+  <body>
+    <p>This program implements a Stack</p>
+    <p>This is the Stack:</p>
+    <p id="first"></p>
+    <p id="last"></p>
+    <p id="stack"><p>
+    <p id="principle"></p>
+    <p id="after"></p>
+    <p id="stack2"></p>
+  </body>
+    <script>
+      $(document).ready(function(){
+        var newstack= new Stack();
+        newstack.add(345);
+        newstack.add(35);
+        newstack.add(45);
+        newstack.add(5);
+        newstack.add(3);
+        newstack.add(34500);
+        newstack.add(23345);
+        newstack.add(10345);
+        newstack.add(345078);
+    var last=    newstack.add(0);
+        $("#last").html("Last element added is: "+last);
+        newstack.print();
+        newstack.delete();
+      });
+    </script>
+</html>
